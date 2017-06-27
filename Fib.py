@@ -1,7 +1,6 @@
 def fib():
-	a = 1
+	a = 0
 	b = 1
-	yield a
 	while True:
 		a, b = b, a + b
 		yield b
