@@ -4,10 +4,8 @@ def fib():
 	yield a
 	yield b
 	while 1:
-		c = a + b
-		a = b
-		b = c
-		yield c
+		a, b = b, a + b
+		yield b
 
 c = fib()
 print c.next()
