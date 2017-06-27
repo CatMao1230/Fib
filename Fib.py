@@ -1,9 +1,8 @@
 def fib():
 	a = 1
-	b = 2
+	b = 1
 	yield a
-	yield b
-	while 1:
+	while True:
 		a, b = b, a + b
 		yield b
 
