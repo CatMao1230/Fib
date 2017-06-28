@@ -5,9 +5,10 @@ def fib():
 		a, b = b, a + b
 		yield b
 
-c = fib()
-print c.next()
-print c.next()
-print c.next()
-print c.next()
-print c.next()
+if __name__ == '__main__':
+	c = fib()
+	print c.next()
+	print c.next()
+	print c.next()
+	print c.next()
+	print c.next()
